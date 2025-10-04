@@ -1,0 +1,6 @@
+# Permite que todos os motores de busca indexem o site
+User-agent: *
+Allow: /
+
+# Localização do sitemap
+Sitemap: https://mtshishere.github.io/metashi/sitemap.xml
