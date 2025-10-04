@@ -1,34 +1,105 @@
-body {
-  font-family: Arial, sans-serif;
+/* RESET */
+* {
   margin: 0;
-  background: #0d0d0d;
-  color: #f2f2f2;
-  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* BODY */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #f0f0f0;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* HEADER */
 header {
-  background: #1a1a1a;
-  padding: 15px;
+  background: rgba(20, 20, 30, 0.95);
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #00ffcc;
+  text-shadow: 2px 2px 8px #ff33aa;
+  margin-bottom: 10px;
 }
 
 nav a {
-  color: #00ffcc;
+  color: #fff;
   margin: 0 15px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
 nav a:hover {
-  color: #ff3399;
+  background: #00ffcc;
+  color: #1a1a1a;
+  text-shadow: none;
 }
 
+/* MAIN CONTENT */
 main {
-  padding: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
 }
 
+main h2 {
+  font-size: 2rem;
+  color: #ff33aa;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 6px #00ffcc;
+}
+
+/* Spotify iframe styling */
+iframe {
+  border-radius: 16px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+  transition: transform 0.3s;
+}
+
+iframe:hover {
+  transform: scale(1.05);
+}
+
+/* FOOTER */
 footer {
-  margin-top: 30px;
-  padding: 10px;
-  background: #1a1a1a;
+  background: rgba(20, 20, 30, 0.95);
+  padding: 15px 0;
+  text-align: center;
+  color: #ccc;
   font-size: 14px;
+  margin-top: 50px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    margin: 5px;
+    padding: 6px 10px;
+  }
+
+  main h2 {
+    font-size: 1.6rem;
+  }
+
+  iframe {
+    width: 95%;
+    height: auto;
+  }
 }
